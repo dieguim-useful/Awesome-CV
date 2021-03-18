@@ -12,6 +12,9 @@
 *.dvi
 *-converted-to.*
 
+## LaTeX Workshop code extension
+*.synctex.gz
+
 ### Editor ###
 ## Vim & Emacs temp files:
 .*sw[op]
