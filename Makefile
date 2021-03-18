@@ -12,7 +12,7 @@ examples: $(foreach x, coverletter cv resume resume-ptbr, $x.pdf)
 resume.pdf: $(EXAMPLES_DIR)/resume.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
-resume.pdf: $(EXAMPLES_DIR)/resume-ptbr.tex $(RESUME_SRCS)
+resume-ptbr.pdf: $(EXAMPLES_DIR)/resume-ptbr.tex $(RESUME_SRCS)
 	$(CC) -output-directory=$(EXAMPLES_DIR) $<
 
 cv.pdf: $(EXAMPLES_DIR)/cv.tex $(CV_SRCS)
