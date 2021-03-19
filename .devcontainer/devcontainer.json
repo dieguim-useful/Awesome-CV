@@ -2,7 +2,7 @@
 {
   "name": "Tex Live",
   "build": {
-    "dockerfile": "Dockerfile",
+    "dockerfile": "Dockerfile"
     // Set tex 'USER_UID' and 'USER_GID'
     // "args": { "USER_UID": "1000", "USER_GID": "1000" }
   },
@@ -13,7 +13,11 @@
   },
 
   // Add the IDs of extensions you want installed when the container is created.
-  "extensions": [ "james-yu.latex-workshop" ],
+  "extensions": [
+    "james-yu.latex-workshop",
+    "streetsidesoftware.code-spell-checker",
+    "streetsidesoftware.code-spell-checker-portuguese-brazilian"
+  ],
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   // "forwardPorts": [],
